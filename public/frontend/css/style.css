@@ -3,7 +3,11 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.3px;
+    
 }
+body{
+    width:1200px;
+    margin:auto;}
 ul{
     list-style: none;
 }

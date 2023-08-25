@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dưa leo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css'  href="{{ asset('frontend/css/style.css') }}">
+    <link rel='stylesheet' type='text/css'  href="{{ asset('frontend/css/main.css') }}">
     <!-- <link rel='stylesheet'  href='{{ asset('frontend/js/jquery-3.2.1.slim.min.js') }}css/bootstrap.min.css'> -->
     <link rel="stylesheet" type='text/css'href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
     <script src='main.js'></script>
@@ -13,13 +13,8 @@
     <script src="{{ asset('frontend/js/jquery-3.6.2.min.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/slick.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/slick-theme.css') }}"/>
-    <style>
-        .box{
-            box-shadow: 10px 10px 20px rgb(231, 231, 231);
-        }
-    </style>
 </head>
-<body style="width: 1200px;margin:auto">
+<body>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -37,7 +32,6 @@ s0.parentNode.insertBefore(s1,s0);
 
   
     @yield("do-du-lieu-vao-layout")
-    <div class="end">
      <div class="container_feedback">
         <div class="title">
             <h1>PHẢN HỒI CỦA KHÁCH HÀNG</h1>
@@ -82,12 +76,12 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
      </div>  
      <div class="brand">
-        <a href=""><img src="{{ asset('upload/brand2.png') }}" alt=""></a>
-        <a href=""><img src="{{ asset('upload/brand1.png') }}" alt=""></a>
-        <a href=""><img src="{{ asset('upload/brand2.png') }}" alt=""></a>
-        <a href=""><img src="{{ asset('upload/brand1.png') }}" alt=""></a>
-        <a href=""><img src="{{ asset('upload/brand2.png') }}" alt=""></a>
-        <a href=""><img src="{{ asset('upload/brand1.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand2.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand1.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand2.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand1.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand2.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('frontend/img/brand1.png') }}" alt=""></a>
      </div>
      <footer>
         <div class="container_footer">
@@ -214,7 +208,7 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
 
     </footer>
-</div>
+
     <!-- <script src="/js/bootstrap.min.js"></script> -->
     <script src="{{ asset('frontend/js/jquery-3.2.1.slim.min.js') }}"></script>
     <script src="{{ asset('frontend/js/jquery-3.6.2.min.js') }}"></script>

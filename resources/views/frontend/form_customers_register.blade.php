@@ -54,7 +54,7 @@
                 </div>
             </form>
             <div class="row">
-                <p> Bạn đã có tài khoản hãy <a href="{{ url('customers/login') }}">Đăng nhập</a></p>
+                <p> Bạn chưa có tài khoản hãy <a href="/layout/signup.html">Đăng ký</a></p>
             </div>
         </div>
 

@@ -4,7 +4,7 @@
 	//để sử dụng các hàm bên trong trait Cart thì phải khai báo ở đây
 	use \App\Http\ShoppingCart\Cart;
 @endphp
-@if(!empty($cart))
+@if(isset($cart))
 <form action="{{ url('cart/update') }}" method="post">
     @csrf
 <div class="cart_content">
@@ -17,20 +17,19 @@
                     <th>Thành tiền</th>
                     <th>Xóa</th>
                 </tr>
-                    @foreach($cart as $product)
+                @foreach($cart as $product)
                 <tr>
                     <td> <img src="{{ asset('upload/products/'.$product['photo']) }}" alt=""></td>
-    <td>
-            <a href="{{ url('products/detail/'.$product['id']) }}">{{ $product['name'] }}</a></td>
+                    <td><a href="{{ url('products/detail/'.$product['id']) }}">{{ $product['name'] }}</a></td>
                     <td>{{ number_format($product['price'] - ($product['price'] * $product['discount'])/100) }}₫ </td>
                     <td><input type="number" id="qty" min="1" class="input-control" value="{{ $product['quantity'] }}" 
                     name="product_{{ $product['id'] }}" required="Không thể để trống"></td>
-                            <td style="color:#fe9705">{{ number_format($product['quantity'] * ($product['price'] - ($product['price'] * $product['discount'])/100)) }}₫</td>
+                    <td style="color:#fe9705">{{ number_format($product['quantity'] * ($product['price'] - ($product['price'] * $product['discount'])/100)) }}₫</td>
                     <td><a href="{{ url('cart/remove/'.$product['id']) }}" data-id="2479395"><i class="fa-solid fa-trash-can"></i></a></td>
                 </tr>
                 @endforeach
             </table>
-</div>
+        </div>
        
         @if(Cart::cartNumber() > 0)
         <div class="pay_content">
@@ -50,20 +49,5 @@
             </div>
         </div>
         @endif
-        @else 
-        <div class="notice"> 
-            <i class="fa-regular fa-face-smile"> !</i>
-            <h1>Không có sản phẩm nào trong giỏ hàng, hãy lựa chọn sản phẩm</h1>
-            <a href="{{ url('home')}}">Trang chủ</a>
-        </div>
-        <style> 
-        .end{display:none}
-        .notice{ text-align: center}
-        .notice i{ font-size: 50px; margin-top: 100px;color:#fe9705;}
-        .notice h1{font-size: 20px; margin-top: 20px;background: white;color: black}
-        .notice a{font-size: 18px;font-weight: bold; margin-top: 20px;background: #80bb35;;color:white;display: inline-block;border-radius: 10px;padding:10px 20px;}
-        .notice a:hover{background: #fe9705;}
-        </style>
     @endif
-    
 @endsection

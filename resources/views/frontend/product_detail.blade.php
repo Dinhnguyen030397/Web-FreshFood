@@ -19,10 +19,10 @@
                     <img src="{{ asset('upload/products/'.$record->photo) }}" alt=""id="show_image" style="width: 380px;margin: auto;">
                     <ul>
                         <li> <img src="{{ asset('upload/products/'.$record->photo) }}" alt="" id="img1" onclick="change_img('img1');"></li>
-                        <li> <img src="{{ asset('admin/img/img1.jpg') }}" alt="" id="img2" onclick="change_img('img2');"></li>
-                        <li> <img src="{{ asset('admin/img/img2.jpg') }}" alt="" id="img3" onclick="change_img('img3');"></li>
-                        <li> <img src="{{ asset('admin/img/img3.jpg') }}" alt="" id="img4" onclick="change_img('img4');"></li>
-                        <li> <img src="{{ asset('admin/img/img4.jpg') }}" alt="" id="img5" onclick="change_img('img5');"></li>
+                        <li> <img src="{{ asset('upload/products/1686191927_tôm.png') }}" alt="" id="img2" onclick="change_img('img2');"></li>
+                        <li> <img src="{{ asset('upload/products/1686192057_táo đỏ.jpg') }}" alt="" id="img3" onclick="change_img('img3');"></li>
+                        <li> <img src="{{ asset('upload/products/1686191294_1.png') }}" alt="" id="img4" onclick="change_img('img4');"></li>
+                        <li> <img src="{{ asset('upload/products/1686191473_5.png') }}" alt="" id="img5" onclick="change_img('img5');"></li>
                     </ul>
                 </div>
               

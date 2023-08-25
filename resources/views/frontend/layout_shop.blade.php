@@ -44,7 +44,56 @@ s0.parentNode.insertBefore(s1,s0);
 
             <li>
                 <a href="">  <i class="fa-regular fa-circle-check"></i> Sản phẩm</a>
-                
+                <ul>
+                    <li >
+                        <a href="">Menu demo 1</a>
+                        <ul>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="">Menu demo 1</a>
+                        <ul>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="">Menu demo 1</a>
+                        <ul>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="">Menu demo 1</a>
+                        <ul>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="">Menu demo 1</a>
+                        <ul>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                            <li><a href="">Menu demo 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
             
             </li>
 
@@ -54,7 +103,23 @@ s0.parentNode.insertBefore(s1,s0);
 
             <li>
                 <a href="">  <i class="fa-regular fa-circle"></i> Tin tức</a>
-                
+                <ul>
+                    <li >
+                        <a href="">Tin mới</a>
+                    </li>
+                    <li >
+                        <a href="">Tin quốc tế</a>
+                        <ul>
+                            <li><a href="">Tin 1</a></li>
+                            <li><a href="">Tin 2</a></li>
+                            <li><a href="">Tin 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="">Tin trong nước</a>
+                    </li>
+                </ul>
             </li>
 
             <li>

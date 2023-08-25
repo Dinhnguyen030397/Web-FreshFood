@@ -190,7 +190,7 @@
     <style type="text/css">
       .header-search{position: relative;}
       .search-result{position: absolute; z-index: 10;right:-40px;top:50px;background: white}
-      .search-result ul{padding:0px; margin:0px; list-style: none; width: 350px; background: white; max-height: 200px; overflow: scroll;}
+      .search-result ul{padding:0px; margin:0px; list-style: none; width: max-content; background: white; max-height: 200px; overflow: scroll;}
       .search-result ul li{border-bottom: 1px solid #dddddd;display:flex}
       .search-result img{width: 40px;margin:0px 20px}
       .search-result a{color:black}

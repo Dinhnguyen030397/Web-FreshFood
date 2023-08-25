@@ -9,10 +9,10 @@
         </div>
                 
         <div class="select">
-            <a href="{{url('products/category/12')}}">Rau củ</a>
-            <a href="{{url('products/category/13')}}">Hoa quả</a>
-            <a href="{{url('products/category/14')}}">Thịt</a>
-            <a href="{{url('products/category/15')}}">Hải sản</a>
+            <a href="">Rau củ</a>
+            <a href="">Hoa quả</a>
+            <a href="">Thịt</a>
+            <a href="">Hải sản</a>
         </div>
     </div> 
     
@@ -32,7 +32,7 @@
                     <a href="{{ url('products/detail/'.$row->id) }}"><img src="{{ asset('upload/products/'.$row->photo) }}" title="{{ $row->name }}" alt="{{ $row->name }}"></a>
                 </div>
                 <div class="infor">
-                    <a style="font-size: 16px; font-weight:bold;font-style: italic;color:orangered" href="{{ url('products/detail/'.$row->id) }}">{{ $row->name }}</a>
+                    <a href="{{ url('products/detail/'.$row->id) }}">{{ $row->name }}</a>
                     @if($row->discount >0)
                     <p style="font-weight:bold; color:gray;font-size:16px;text-decoration:line-through;">{{ number_format($row->price) }}.đ</p>
                     
@@ -74,10 +74,10 @@
         </div>
                 
         <div class="select">
-            <a href="{{url('products/category/12')}}">Rau củ</a>
-            <a href="{{url('products/category/13')}}">Hoa quả</a>
-            <a href="{{url('products/category/14')}}">Thịt</a>
-            <a href="{{url('products/category/15')}}">Hải sản</a>
+            <a href="">Rau củ</a>
+            <a href="">Hoa quả</a>
+            <a href="">Thịt</a>
+            <a href="">Hải sản</a>
         </div>
     </div> 
     
@@ -97,7 +97,7 @@
                     <a href="{{ url('products/detail/'.$row->id) }}"><img src="{{ asset('upload/products/'.$row->photo) }}" title="{{ $row->name }}" alt="{{ $row->name }}"></a>
                 </div>
                 <div class="infor">
-                    <a style="font-size: 16px; font-weight:bold;font-style: italic;color:orangered" href="{{ url('products/detail/'.$row->id) }}">{{ $row->name }}</a>
+                    <a href="{{ url('products/detail/'.$row->id) }}">{{ $row->name }}</a>
                     @if($row->discount >0)
                     <p style="font-weight:bold; color:gray;font-size:16px;text-decoration:line-through;">{{ number_format($row->price) }}.đ</p>
                     
@@ -123,7 +123,7 @@
     @endforeach
     </div>          
 </div>
-<div class="banner_coltab3" style="margin-left:30px">
+<div class="banner_coltab3" style="justify-content:center">
             <img src="{{ asset('upload/banner_coltab3_1.png') }}" alt="">
             <img src="{{ asset('upload/banner_coltab3_2.png') }}" alt="">
         </div>
@@ -170,6 +170,4 @@
             
         </div>
      </div>   
-
-
 @endsection
